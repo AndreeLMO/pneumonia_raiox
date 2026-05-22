@@ -136,3 +136,25 @@ plt.savefig('outputs/learning_curves.png', dpi=300, bbox_inches='tight')
 
 # No gráfico gerado pelo Grad-CAM:
 plt.savefig('outputs/gradcam_result.png', dpi=300, bbox_inches='tight')
+
+🔮 5. Considerações Finais e Trabalhos Futuros
+Este ecossistema de dados demonstrou que a associação de redes profundas robustas (DenseNet121) a mecanismos de explicabilidade pós-hoc (Grad-CAM) oferece um caminho seguro para a introdução de sistemas de triagem assistida por computador (CAD) em ambientes regulados de saúde.
+
+Como extensões naturais desta pesquisa, apontam-se as seguintes frentes:
+
+Validação Externa Multicêntrica: Testar os pesos do modelo com imagens coletadas em diferentes instituições médicas e fabricantes de hardware de raios-X.
+
+Segmentação Pulmonar Prévia: Acoplamento de uma arquitetura baseada em rede U-Net para isolar a região anatômica dos pulmões antes do processamento pela DenseNet121, blindando o classificador contra ruídos extracorpóreos.
+
+Estudo Comparativo com Transfomers: Desenvolver modelos baseados em Vision Transformers (ViTs) e comparar suas performances e mapas de atenção visual com os resultados consolidados neste projeto.
+
+📚 6. Referências Bibliográficas
+HUANG, G.; LIU, Z.; VAN DER MAATEN, L.; WEINBERGER, K. Q. Densely Connected Convolutional Networks. In: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2017, pp. 4700-4708.
+
+SELVARAJU, R. R.; COGGSWELL, M.; DAS, A.; VEDANTAM, R.; PARIKH, D.; BATRA, D. Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization. In: Proceedings of the IEEE International Conference on Computer Vision (ICCV), 2017, pp. 618-626.
+
+KERMANY, Daniel S. et al. Identifying Medical Diagnoses and Guide Student Malaria Screening by Machine Learning. Cell, v. 172, n. 5, p. 1122-1131, 2018.
+
+SHORTLIFFE, Edward H.; CIMINO, James J. (Eds.). Biomedical Informatics: Computer Applications in Health Care and Biomedicine. 5. ed. Cham: Springer, 2021.
+
+GOODFELLOW, Ian; BENGIO, Yoshua; COURVILLE, Aaron. Deep Learning. Cambridge: MIT Press, 2016.
