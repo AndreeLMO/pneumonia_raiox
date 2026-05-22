@@ -1,8 +1,5 @@
 # Aplicação de Deep Learning e Explainable Artificial Intelligence na Detecção de Pneumonia em Radiografias Torácicas Utilizando DenseNet121 e Grad-CAM
 
-# Detecção de Pneumonia em Radiografias Torácicas com DenseNet121 e Grad-CAM
-
-# Inteligência Artificial Explicável (XAI) na Detecção de Pneumonia: Uma Abordagem com DenseNet121 e Grad-CAM em Radiografias Torácicas
 
 Este repositório apresenta o ecossistema computacional, os scripts de treinamento e os subsídios metodológicos desenvolvidos para uma dissertação de **Mestrado em Engenharia Biomédica e Saúde Digital**. O projeto propõe uma abordagem baseada em *Deep Learning* combinada com ferramentas de *Explainable Artificial Intelligence* (XAI) para a triagem automatizada, auditável e clinicamente explicável de pneumonia a partir de imagens digitais de raios-X de tórax.
 
