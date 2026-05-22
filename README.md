@@ -118,7 +118,7 @@ chest_xray/
 ### 4.2 Execução do Pipeline
 Para executar o pipeline computacional localmente, certifique-se de configurar o caminho absoluto ou relativo apontando para a raiz do seu dataset local dentro do código correspondente:
 
-```python
+
 DATASET_PATH = r"C:/SeuCaminho/Para/O/Dataset/chest_xray"
 
 pip install tensorflow matplotlib scikit-learn numpy
