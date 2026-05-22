@@ -114,28 +114,7 @@ chest_xray/
 ├── NORMAL/
 └── PNEUMONIA/
 
-### 4.2 Execução do Pipeline
-Para executar o pipeline computacional localmente, certifique-se de configurar o caminho absoluto ou relativo apontando para a raiz do seu dataset local dentro do código correspondente:
 
-```python
-DATASET_PATH = r"C:/SeuCaminho/Para/O/Dataset/chest_xray"
-
-pip install tensorflow matplotlib scikit-learn numpy
-
-***
-
-### 💡 Lembrete Importante para os Gráficos
-Para que as duas imagens fiquem visíveis no seu repositório do GitHub (os links `outputs/learning_curves.png` e `outputs/gradcam_result.png`), certifique-se de salvar os gráficos gerados no seu script criando a pasta chamada `outputs` e chamando a função correspondente do matplotlib antes do `plt.show()`:
-
-```python
-# Crie o diretório se ele não existir
-os.makedirs('outputs', exist_ok=True)
-
-# No gráfico das curvas de treino:
-plt.savefig('outputs/learning_curves.png', dpi=300, bbox_inches='tight')
-
-# No gráfico gerado pelo Grad-CAM:
-plt.savefig('outputs/gradcam_result.png', dpi=300, bbox_inches='tight')
 
 ## 🔮 5. Considerações Finais e Trabalhos Futuros
 
