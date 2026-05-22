@@ -114,7 +114,7 @@ chest_xray/
 ├── NORMAL/
 └── PNEUMONIA/
 
-
+---
 
 ## 🔮 5. Considerações Finais e Trabalhos Futuros
 
