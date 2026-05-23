@@ -112,6 +112,7 @@ A validação qualitativa do modelo é realizada pela inspeção visual das regi
 ### 4.1 Estrutura de Diretórios Recomendada
 O script espera encontrar o dataset mapeado seguindo o padrão clássico de divisões de conjuntos de dados em aprendizado de máquina:
 
+```text
 chest_xray/
 ├── train/
 │   ├── NORMAL/
@@ -120,9 +121,9 @@ chest_xray/
 │   ├── NORMAL/
 │   └── PNEUMONIA/
 └── test/
-├── NORMAL/
-└── PNEUMONIA/
-
+    ├── NORMAL/
+    └── PNEUMONIA/
+```
 ---
 
 ## 🔮 5. Considerações Finais e Trabalhos Futuros
