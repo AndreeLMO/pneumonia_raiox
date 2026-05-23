@@ -28,9 +28,18 @@ Modelos de alta acurácia são frequentemente descartados na prática clínica r
 
 O pipeline foi construído utilizando o **TensorFlow / Keras 3** e está estruturado em um fluxo ponta a ponta:
 
-[Dataset de Raios-X] ──> [Data Augmentation] ──> [Transfer Learning: DenseNet121]
-│
-└──> [Fine-Tuning Adaptativo (Últimas 50 Camadas)] ──> [Métricas] ──> [Grad-CAM]
+```mermaid
+graph TD
+    A[Dataset de Raios-X] --> B[Data Augmentation]
+    B --> C[Transfer Learning: DenseNet121]
+    C --> D[Fine-Tuning Adaptativo<br>Últimas 50 Camadas]
+    D --> E[Métricas de Avaliação<br>Acurácia, Sensibilidade, F1]
+    E --> F[Grad-CAM<br>IA Explicável]
+
+    %% Estilização do Gráfico
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style F fill:#bbf,stroke:#333,stroke-width:2px
+```
 
 ### 2.1 Pré-processamento e Data Augmentation
 Para lidar com a variabilidade inerente aos diferentes dispositivos de raios-X e evitar o sobreajuste, as matrizes de entrada são redimensionadas para as dimensões de **$224 \times 224 \times 3$** com lotes operacionais (*batch size*) de **16**. O módulo `ImageDataGenerator` aplica transformações geométricas controladas (como rotações pontuais, zoom dinâmico e espelhamento horizontal) exclusivamente no conjunto de treinamento.
